@@ -13,4 +13,4 @@ print("The Target: ", target)
 
 # Visit each node
 print("List of the node values: ", list(BST))
-print("Value of a the 6th node: ", list(BST)[5].value)
+print("Value of a the 5th node: ", list(BST)[4].value)
