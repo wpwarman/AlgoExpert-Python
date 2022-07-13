@@ -1,4 +1,4 @@
-from binarytree import build, Node
+from binarytree import build
 
 print("Depth First Search")
 
@@ -6,7 +6,6 @@ print("Depth First Search")
 nodes = [10, 5, 15, 2, 5, 13, 22, 1, None, None, None, None, 14, None, None]
 BST = build(nodes)
 visitedNodes = set()
-currentNode = BST[0]
 
 def dfs(visitedNodes, BST, currentNode):
 	if currentNode not in visitedNodes:
@@ -18,4 +17,4 @@ def dfs(visitedNodes, BST, currentNode):
 			dfs(visitedNodes, BST, currentNode.right)
 		
 print(BST)
-dfs(visitedNodes, BST, currentNode)
+dfs(visitedNodes, BST, BST[0])
