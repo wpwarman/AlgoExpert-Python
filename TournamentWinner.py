@@ -5,8 +5,10 @@ print("Tournament Winner")
 #	format of record array: [0 or 1, 0 or 1,...]
 #		where 0 = hometeam loss and 1 = hometeam win 
 
-competitions = [["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]]
-record = [0, 0, 1]
+# competitions = [["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]]
+# record = [0, 0, 1]
+competitions = [["HTML", "Java"],["Java", "Python"],["Python", "HTML"]]
+record = [0, 1, 1]
 teams = {}
 
 for x in competitions:
