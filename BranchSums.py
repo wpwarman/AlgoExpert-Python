@@ -1,24 +1,31 @@
-from binarytree import build
+print("Branch Sums")
+class BinaryTree:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
 
-print("Depth First Search")
 
-# Create the BST
-nodes = [10, 5, 15, 2, 5, 13, 22, 1, None, None, None, None, 14, None, None]
-BST = build(nodes)
-visitedNodes = set()
-total = 0
+def branchSums(root):
+	BST = BinaryTree(root)
+	print(BST)
+	return BST
 
-def dfs(visitedNodes, BST, currentNode, total):
-	print(f"The value of the current node is {currentNode.value}")
-	total = total + currentNode.value
-	if currentNode not in visitedNodes:
-		visitedNodes.add(currentNode)
-		if currentNode.left:
-			dfs(visitedNodes, BST, currentNode.left, total)
-		if currentNode.right:
-			dfs(visitedNodes, BST, currentNode.right, total)
-		if not currentNode.right and not currentNode.left:
-			print(f"I've hit rock bottom: {total}")
-			
-print(BST)
-dfs(visitedNodes, BST, BST[0], total)
+def buildTree(array):
+	print(a)
+	while len(a):
+		node = BinaryTree(a.pop())
+		node.left = BinaryTree(a.pop())
+		node.right = BinaryTree(a.pop())
+	return node
+	
+
+
+a = [6,7,82,1,25,44,2,96,54]
+print(a)
+buildTree(a)
+print(a)
+
+
+BST = branchSums(4)
+print(BST.value)
